@@ -310,6 +310,9 @@ section.hero .down-arrw path {
 }
 
 @media only screen and (max-width: 900px) {
+  .down-arrw {
+    display: none;
+  }
   footer {
     margin-top: 3em;
     position: relative;
