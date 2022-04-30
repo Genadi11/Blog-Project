@@ -229,38 +229,6 @@ section.hero .down-arrw path {
 }
 
 @media only screen and (min-width: 1200px) {
-  .progress-section {
-    position: fixed;
-    margin: 0px;
-    right: 0px;
-    top: 40%;
-    width: 60px;
-    height: 20%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    will-change: transform;
-    -webkit-transition: 0.3s ease-out;
-    transition: 0.3s ease-out;
-  }
-  .progress-section .progress-bar-wrap {
-    position: relative;
-    width: 5px;
-    border: 1px solid black;
-    border-radius: 10px;
-    overflow: hidden;
-    background: #464646;
-  }
-  .progress-section .progress-bar-wrap .progress-bar {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0%;
-    background: #bdbdbd;
-  }
   .wrapper {
     width: 1200px;
     margin: 0 auto;
