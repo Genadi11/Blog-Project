@@ -10,28 +10,4 @@ const nav = document.querySelector('nav')
         nav.classList.remove('open-nav');
     })
 
-// Progress bar 
-let progressSection = document.querySelector('.progress-section');
-let progressBar = document.querySelector('.progress-bar');
-let progressNum = document.querySelector('.progress-num');
-
-let x,y;
-
-function updateProgressBar(){
-    progressBar.style.height = `${getScrollPercentage()}%`;
-    progressNum.innerText = `${Math.floor(getScrollPercentage())}%`;
-    requestAnimationFrame(updateProgressBar)
-};
-
-function getScrollPercentage(){
-    var h = document.documentElement, 
-        b = document.body,
-        st = 'scrollTop',
-        sh = 'scrollHeight';
-
-    var percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-    return percent;
-};
-
-updateProgressBar()
 

@@ -107,13 +107,6 @@
       </section>
     </div>
 
-    <!-- Progress bar
-    <div class="progress-section">
-      <div class="progress-bar-wrap">
-        <div class="progress-bar"></div>
-      </div>
-      <div class="progress-num"></div>
-    </div> -->
 
     <!-- Footer -->
     <footer>
@@ -164,18 +157,19 @@
         <div class="right box">
           <h2>Contact Us</h2>
           <div class="content1">
-            <form action="#">
-              <div>
+            <form action="https://formsubmit.co/genchevg11@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="New submission!">
+              <input type="hidden" name="_captcha" value="false">
                 <div class="text">Your Name</div>
-                <input type="text" required />
+                <input type="text" name="name" required />
               </div>
               <div>
                 <div class="text">Email</div>
-                <input type="text" required />
+                <input type="email" name="email" required />
               </div>
               <div>
                 <div class="text">Message</div>
-                <textarea cols="25" rows="2"></textarea>
+                <textarea cols="25" rows="2" name="message"></textarea>
               </div>
               <div class="btn">
                 <input type="submit" value="Send" />
@@ -192,50 +186,6 @@
       </div>
     </footer>
 
-    <!-- <script>
-      $('a[href*="#"]')
-        // Remove links that don't actually link to anything
-        .not('[href="#"]')
-        .not('[href="#0"]')
-        .click(function (event) {
-          // On-page links
-          if (
-            location.pathname.replace(/^\//, "") ==
-              this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-          ) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length
-              ? target
-              : $("[name=" + this.hash.slice(1) + "]");
-            // Does a scroll target exist?
-            if (target.length) {
-              // Only prevent default if animation is actually gonna happen
-              event.preventDefault();
-              $("html, body").animate(
-                {
-                  scrollTop: target.offset().top,
-                },
-                1000,
-                function () {
-                  // Callback after animation
-                  // Must change focus!
-                  var $target = $(target);
-                  $target.focus();
-                  if ($target.is(":focus")) {
-                    // Checking if the target was focused
-                    return false;
-                  } else {
-                    $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-                    $target.focus(); // Set focus again
-                  }
-                }
-              );
-            }
-          }
-        });
-    </script> -->
     <script src="js/main.js"></script>
   </body>
 </html>
