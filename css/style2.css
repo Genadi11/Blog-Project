@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 * .progress-section {
   display: none;
 }
@@ -123,7 +128,7 @@ section.hero .down-arrw path {
   fill: white;
 }
 
-.more-info img {
+.more-info .articles img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -197,13 +202,23 @@ section.hero .down-arrw path {
   .feature {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[2];
-        grid-template-columns: repeat(2, auto);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     gap: 5em;
     margin-bottom: 5em;
   }
-  .feature img {
-    width: 30em;
+  .feature .grow {
+    display: inline-block;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+  }
+  .feature .grow:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .feature .content {
     text-align: right;
@@ -212,7 +227,7 @@ section.hero .down-arrw path {
   .feature.flip {
         grid-template-areas: "left right";
   }
-  .feature.flip img {
+  .feature.flip .articles {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: left;
@@ -220,8 +235,8 @@ section.hero .down-arrw path {
   .feature.flip .content {
     text-align: left;
     width: 25em;
-    -ms-grid-column-align: left;
-        justify-self: left;
+    -ms-grid-column-align: right;
+        justify-self: right;
   }
   .logo {
     margin: -1.5em 0 0 1em;
@@ -399,7 +414,7 @@ footer .main-container .box .content1::after {
   content: "";
   height: 2px;
   width: 15%;
-  background: #2196f3;
+  background: #21f367;
   top: -10px;
 }
 
