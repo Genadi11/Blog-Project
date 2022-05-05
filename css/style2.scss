@@ -119,7 +119,6 @@ section.hero {
       height: 11em;
     }
   }
-  
 
   .title {
     font-weight: bold;
@@ -190,12 +189,11 @@ section.hero {
   }
 
   .feature {
-    
     .grow {
       display: inline-block;
-      transition-duration: .3s;
+      transition-duration: 0.3s;
       transition-property: transform;
-    
+
       &:hover {
         transform: scale(1.1);
       }
@@ -206,22 +204,21 @@ section.hero {
     gap: 5em;
     margin-bottom: 5em;
 
-
     .content {
       text-align: right;
-      width: 25em;
+      width: 30em;
     }
   }
   .feature.flip {
     grid-template-areas: "left right";
 
-    .articles{
-        grid-area: left;
+    .articles {
+      grid-area: left;
     }
 
     .content {
       text-align: left;
-      width: 25em;
+      width: 30em;
       justify-self: right;
     }
   }
@@ -232,43 +229,11 @@ section.hero {
 }
 
 @media only screen and (min-width: 1200px) {
-  // .progress-section {
-  //   position: fixed;
-  //   margin: 0px;
-  //   right: 0px;
-  //   top: 40%;
-  //   width: 60px;
-  //   height: 20%;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   will-change: transform;
-  //   transition: 0.3s ease-out;
-
-  //   .progress-bar-wrap {
-  //     position: relative;
-  //     width: 5px;
-  //     border: 1px solid black;
-  //     border-radius: 10px;
-  //     overflow: hidden;
-  //     background: rgb(70, 70, 70);
-
-  //     .progress-bar {
-  //       position: absolute;
-  //       bottom: 0;
-  //       width: 100%;
-  //       height: 0%;
-  //       background: rgb(189, 189, 189);
-  //     }
-  //   }
-  // }
   .wrapper {
     width: 1200px;
     margin: 0 auto;
   }
 
-  .feature {
-    gap: 0;
-  }
   body::-webkit-scrollbar {
     display: none;
   }
@@ -305,7 +270,17 @@ section.hero {
 }
 
 @media only screen and (max-width: 900px) {
-  .down-arrw{
+  .hero{
+    margin: -2em 0 0  ;
+  }
+  .wrapper{
+    margin: 1em;
+  }
+  .feature{
+    margin: .7em;
+  }
+
+  .down-arrw {
     display: none;
   }
   footer {
@@ -317,7 +292,7 @@ section.hero {
     flex-wrap: wrap;
     flex-direction: column;
     .box {
-      margin: 0.3em;
+      margin: .3em;
     }
   }
 }
@@ -327,16 +302,21 @@ footer {
   width: 100%;
   background: #111;
   color: antiquewhite;
+
   .main-container {
     display: flex;
+
     .left .content1 {
       p {
         text-align: justify;
       }
+
       .social {
         margin: 1.5em 0 0;
+
         a {
           padding: 0 2px;
+
           span {
             color: white;
             height: 40px;
@@ -358,12 +338,15 @@ footer {
     .box {
       flex-basis: 50%;
       padding: 10px 20px;
+
       .content1 {
         margin: 20px 0 0 0;
         position: relative;
       }
+
       .content::before {
         position: absolute;
+
         content: "";
         top: -10px;
         height: 2px;

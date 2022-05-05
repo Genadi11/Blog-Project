@@ -209,8 +209,8 @@ section.hero .down-arrw path {
   }
   .feature .grow {
     display: inline-block;
-    -webkit-transition-duration: .3s;
-            transition-duration: .3s;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
     transition-property: transform;
@@ -222,7 +222,7 @@ section.hero .down-arrw path {
   }
   .feature .content {
     text-align: right;
-    width: 25em;
+    width: 30em;
   }
   .feature.flip {
         grid-template-areas: "left right";
@@ -234,7 +234,7 @@ section.hero .down-arrw path {
   }
   .feature.flip .content {
     text-align: left;
-    width: 25em;
+    width: 30em;
     -ms-grid-column-align: right;
         justify-self: right;
   }
@@ -247,9 +247,6 @@ section.hero .down-arrw path {
   .wrapper {
     width: 1200px;
     margin: 0 auto;
-  }
-  .feature {
-    gap: 0;
   }
   body::-webkit-scrollbar {
     display: none;
@@ -325,6 +322,15 @@ section.hero .down-arrw path {
 }
 
 @media only screen and (max-width: 900px) {
+  .hero {
+    margin: -2em 0 0;
+  }
+  .wrapper {
+    margin: 1em;
+  }
+  .feature {
+    margin: .7em;
+  }
   .down-arrw {
     display: none;
   }
@@ -342,7 +348,7 @@ section.hero .down-arrw path {
             flex-direction: column;
   }
   .main-container .box {
-    margin: 0.3em;
+    margin: .3em;
   }
 }
 
